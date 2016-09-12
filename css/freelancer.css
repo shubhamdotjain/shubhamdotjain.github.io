@@ -473,6 +473,16 @@ fieldset[disabled] .btn-success.active {
   right: 25px;
   cursor: pointer;
 }
+#tt{
+  text-align: center;
+  margin-left: 5vw;
+  padding-left: 5vw;
+}
+.tt{
+  text-align: center;
+  margin-left: 5vw;
+  padding-left: 5vw;
+}
 .portfolio-modal .close-modal:hover {
   opacity: 0.3;
 }

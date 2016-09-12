@@ -217,7 +217,7 @@ function win()
 		}
 
 		if(itr==8 && answer!="player 1" && answer!="player 2") {window.alert("Draw");window.location.reload()
-		}
+		} 
 		
 };
 

@@ -24,7 +24,7 @@ window.onload=function()
 	// var a= document.getElementById("one");
 	// a.innerHTML +="Hello world"
 	// // document.getElementById("one").innerHTML +="Hello"
-	// a.style.backgroundColor="Red";
+	// a.style.backgroundColor="#2C3E50";
 	// document.getElementById('inc').onclick=function(){
 	// 	var val= document.getElementById('one');
 	// 	var val2= document.getElementById('two');
@@ -41,7 +41,7 @@ window.onload=function()
 			check(itr,a,0)
 			itr++
 			// a.style.width= "30%"
-			// a.style.background="Red"
+			// a.style.background="#2C3E50"
 			// console.log(itr)
 			// check(itr,a)
 		};
@@ -88,7 +88,9 @@ window.onload=function()
 			itr++
 		};
 
-
+		document.getElementById("submit").onclick=function(){
+			window.location.reload()
+		};
 	
 
 	function check(itr,a,index)
@@ -112,11 +114,11 @@ window.onload=function()
 	function player1(a,index){
 		a.style.width= "30%"
 			a.style.height="30%"
-			a.style.background= "Red";
+			a.style.background= "#2C3E50";
 			// a.borderRadius= "50%"; 
-			a.style.border="30px solid black";
+			a.style.border="20px solid white";
 			a.setAttribute("id","done");
-			document.getElementById("ttt").style.background="Red"
+			document.getElementById("ttt").style.background="#2C3E50"
 			arr [index]=1
 			win()
 		};
@@ -124,11 +126,11 @@ window.onload=function()
 	function player2(a,index){
 		a.style.width= "30%"
 			a.style.height="30%"
-			a.style.background= "white";
+			a.style.background= "#18BC9C";
 			// a.borderRadius= "50%"; 
-			a.style.border="30px solid black";
+			a.style.border="20px solid white";
 			a.setAttribute("id","done");
-			document.getElementById("ttt").style.background="white"
+			document.getElementById("ttt").style.background="#18BC9C"
 			arr[index]=2;
 			win()
 };
@@ -209,11 +211,13 @@ function win()
 		{	
 
 			window.alert("Player 1 won")
+			window.location.reload()
 		}
-		if(answer== "player 2") window.alert("Player 2 won")
+		if(answer== "player 2") {window.alert("Player 2 won"); window.location.reload()
+		}
 
-		if(itr==8 && answer!="player 1" && answer!="player 2") window.alert("Draw")
-
+		if(itr==8 && answer!="player 1" && answer!="player 2") {window.alert("Draw");window.location.reload()
+		}
 		
 };
 

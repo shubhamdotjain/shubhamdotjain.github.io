@@ -1,29 +1,52 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-	<meta charset="UTF-8">
+	
 	<meta description="a simple tic tac toe game">
-	<title></title>
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>A little about me</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+	<title>Tic tac toe</title>
 
 	<style>
 		#ttt{
 			width: 45vw;
 			height: 45vw;
-			background: white;
+			background: #18BC9C;
 			margin-top: 10vw;
 			margin-left: 25vw;
-			padding:7vw;
+			padding:5vw;
 			border-radius: 50%
+		}
+		#submit{
+			margin-left: 45vw;
 		}
 		.row-0{
 			/*apply style */
 			width: 30%;
 			height: 30%;
-			background: black;
+			background: #2C3E38;
 			/*border-radius: 50%; (circle)*/
 			border-radius: 50%;
 			
-			border:3px dotted white;
+			border:3px solid black;
 
 		}
 		.row-0:hover{
@@ -35,12 +58,12 @@
 			height: 30%;
 			background: blue;
 			border-radius: 50%; 
-			border:30px solid white;
+			border:30px solid #18BC9C;
 		}
 		.row-2{
 			width: 30%;
 			height: 30%;
-			background: white;
+			background: #18BC9C;
 			border-radius: 50%; 
 			border:30px solid blue;
 		}
@@ -48,15 +71,36 @@
 			width: 30%vw;
 			height:10%vw;
 			margin-bottom: 5%vw;
-			background-color: red;
+			background-color: #2C3E50;
 		}
+		body {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+  background-color:  #2C3E35;
+}
+header {
+  text-align: center;
+  background: #18BC9C;
+  color: white;
+}
 
+header  .name {
+  display: block;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 1000;
+  font-size: 3em;
+}
 
 	</style>
 
 	<script type="text/javascript" src="main.js"> </script>
 </head>
 <body>
+<header>	<span class="name">Tic Tac Toe</span> </header>
+<br> <br><br><br>
+<button align="centre" id="submit" class="btn btn-success btn-lg">Play Again</button>
+
 <table id="ttt">
 	<!-- <input type="number" id="one"  >
 	<input type="number" id="two" >
